@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    color: black;
+    font-size: 22px;
+    font-family: 'Ramaraja', serif;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+
+/* ------------------Headings --------------------- */
+
+h1{
+    font-weight: 300;
+}
+
+h2{
+    font-size: 90%;
+    letter-spacing: 1px;
+}
+
+h3{
+    text-align: center;
+    color: black;
+    margin-bottom: 1%;
+}
+h3:after{
+    display: block;
+    height: 2px;
+    background-color:#2E5775;
+    content: " ";
+    width:100px;
+    margin:0 auto;
+    /* margin-top: 10px; */
+}
+
+
+/* ------------------ header ---------------------- */
+
+.logo_text{
+    color: orange;
+    float: left;
+    padding: 18px;
+    margin-left: 1%;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    z-index: 100;
+}
+
+.main-nav{
+    display: flex;
+    /* background-color: black; */
+    /* text-align: end; */
+    justify-content: flex-end;
+}
+
+.main-nav li{
+    margin-right: 2px;
+    list-style: none;
+    padding: 18px;
+}
+
+.main-nav li a{
+    font-weight: 300;
+    font-size: 90%;
+    text-decoration: none;
+    color: orange;
+    transition: color 0.3s;
+}
+.main-nav li a:hover{
+    color: white;
+}
+
+
+/* .sticky .navbar .main-nav{
+    display: none;
+} */
+
+
+
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0.8)),url("img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box{
+    font-size: 110%;
+    color: white;
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.extra_info{
+    font-size: 110%;
+    background-color: #005a87;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.full_view{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* --------------- Mobility ------------------- */
+
+.card{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+    padding: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card-image{
+    /* flex:1; */
+    width: 300px;
+    height: 300px;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-text{
+    padding: 1%;
+    flex: 1;
+}
+
+.card-text p{
+    word-spacing: 2px;
+    font-size: 90%;
+}
+
+
+.mobility-gallary{
+    list-style: none;
+    width: 100%;
+}
+
+.mobility-gallary li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.mobility-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.mobility-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: 300px;
+    transform: scale(1.15);
+    transition: transform 0.5s opacity 0.5s;
+}
+
+.mobility-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.clearfix {zoom: 1; }
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
+
+/* --------------- footer--------------------- */
+
+
+section{
+    background-color: rgb(253,242,237);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 2%;
+    color: orange;
+}
+
+.information{
+    font-size: 120%;
+}
+
+
+/* -------------- Blindness------------------ */
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+
+  }
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+
+/* ------------- Responsive ----------------- */
+
+@media only screen and (max-width: 500px) {
+    html{
+        font-size: 10px;
+    }
+    section{
+        padding:60px 0
+    }
+
+    .hero-text-box{
+        padding: 0 2%;
+        width: 100%;
+    }
+
+    nav{
+        height: 30px;
+        background-color: black;
+    }
+
+    .logo_text{
+        color: orange;
+        float: left;
+        padding: 10px;
+        margin-left: 1%;
+    }
+
+    .main-nav li{
+        padding: 10px;
+    }
+
+    .mobility-gallary li{
+        width: 100%;
+    }
+
+    .mobility-photo{
+        background-color: white;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .mobility-photo img{
+        width: 100%;
+        height: 100px;
+        transform: none;
+        opacity: 1;
+    }
+
+
+
+}
+
