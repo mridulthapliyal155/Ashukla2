@@ -144,7 +144,8 @@ header{
 
 
 .home_row,.about_row,.services_row{
-    background-color: #996633;
+    background: rgb(153,102,51);
+background: linear-gradient(84deg, rgba(153,102,51,1) 0%, rgba(205,150,33,1) 54%, rgba(153,102,51,1) 100%);
     border-radius: 30px;
 }
 
@@ -194,7 +195,8 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    background-color: #996633;
+    background: rgb(153,102,51);
+background: linear-gradient(84deg, rgba(153,102,51,1) 0%, rgba(205,150,33,1) 54%, rgba(153,102,51,1) 100%);
     color: white;
     text-align: center;
     height: 300px;
@@ -222,6 +224,12 @@ footer{
 
 .information{
     font-size: 120%;
+}
+
+a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
 }
 
 
